@@ -2,18 +2,42 @@
 
 int main()
 {
-   int a;
-   printf("inserisci l'éta \n");
-   scanf("%d", &a);
 
-   if (a >= 18)
-   {
-    printf("l'utente e maggiorenne");
-   }
+    float a;
+    float b = a * 1.8 + 32;
+    float c = a + 273.15;
    
-   else
-   {
-    printf("l'utente e minorenne");
-   }
+    
+    
+    printf("inserisci una temperatura in Celsius \n");
+    scanf("%f" , &a);
+    
+   
+
+
+    if (a < -273.15)
+    { 
+        printf("si segnala un problema");
+    }
+    else
+    { 
+      printf("in kelvin %f" , c);
+        printf(" in Fahrenheit %f", b);
+    }
+
+
+
+
+
+
+
+
 
 }
+    
+
+
+
+
+
+   
