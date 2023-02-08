@@ -1,38 +1,32 @@
 #include <stdio.h>
 int main()
 {
-    int a;
-    int b;
-    int c;
-     printf("inserisci tre numeri \n");
-     scanf("%d %d %d" , &a , &b , &c);
-     if (a + b > c && b + c > a && c + a > b)
+   int x;
+   
+   printf("ïnserisci un numero\n");
+   scanf("%d", &x);
+    int y = x - 1;
+   while (x % y != 0 && y > 1) 
+  {  
+      y = y - 1;
+  }
+ if( y == 1)
      {
-        printf("le lunghezze sono i lati del triangolo");
-         
-         if ( a != b && a != c && b != c)
-    {
-        printf("scaleno");
-    
-    }
-     
-      else if ( a == b && a == c)
-    {
-        printf("equilatero");
-    }
-     else  
-    {
-        printf("isoscele");
-    }
-
-     
-
+        printf("primo\n");
      }
-     
-     else 
-     {
-         printf("le lunghezze non sono i lati di un triangolo");
-     }
+else
+{
+    printf("non primo");
+}
+
+
+
+
+
+
+
+
+
 
 
 }
